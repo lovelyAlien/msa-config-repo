@@ -40,3 +40,10 @@ management:
   health:
     circuitbreakers:
       enabled: true
+
+# configureDefault 의 TimeLimiter 설정이 적용되지 않아(기본 1초) 여기서 지정한다.
+resilience4j:
+  timelimiter:
+    configs:
+      default:
+        timeout-duration: 3s
