@@ -19,4 +19,4 @@ spring:
 
 payment:
   demo:
-    delay-ms: 0
+    delay-ms: 30000
